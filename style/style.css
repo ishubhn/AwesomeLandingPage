@@ -1,0 +1,90 @@
+html {
+	font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+body{
+	background-color: #000000;
+	margin: 0;							/*body expanded upto corners with 0 marfin, no gap between window and website*/
+}
+
+header {
+	height: 80px;
+	background-color: #ffffff;
+}
+
+#header-container {						/*id start with hash(#)*/
+	width: 80%;
+	margin: auto;
+}
+
+.col-3 {								/*for class start with dot(.)*/
+	width: 33%;
+	float: left;						/*with this all div coloumn becomes inline overriding html natural flow*/
+}
+
+.logo {
+	padding-top: 30px;
+}
+
+.menu {
+	margin-top: 32px;
+}
+
+.menu li {								/*every list items within class menu*/
+	list-style-type: none;				
+	display: inline;					/*we need this to be aligned horizontally not vertically*/
+	font-size: 0.85em;
+	color: #8e8e8e;
+	padding-right: 30px;				/*distance between list elements*/
+}
+
+.getStartedBTN {
+	background-color: #6dc77a;
+	border-radius: 28px;
+/*	-moz-border-radius: 28px;*/		/*if feature is not supported by older browser versions (firefox)*/
+/*	-webkit-border-radius: 28px;		*//*for safari*/
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 26px;					/*top right bottom left*/
+	margin-top: 20px;					/*from its parent element*/
+	display: inline-block;				/*with display: inline-block, the top and bottom margins/paddings are respected, but with 											display: inline they are not. Compared to display: block, the major difference is that 											display: inline-block does not add a line-break after the element, so the element can 											sit next to other elements.*/
+	font-size: 17px;
+	float: right;
+}
+
+#top-section-main {
+	background-image: url(../images/friends.jpg);
+	height: 740px;
+	border: none;
+}
+
+#top-section-content {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+}
+
+#top-section-content h1 {			/*all h1 in top-section-content */
+	font-size:	4em;
+	font-weight: 50;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 80px;
+}
+
+#top-section-content p {
+	font-size:	1.3em;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.play-button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 50px 0px 100px 0px;						 /*Top Right Bottom Left*/
+}
