@@ -3,10 +3,16 @@ html {
 }
 
 body{
-	background-color: #000000;
-	margin: 0;							/*body expanded upto corners with 0 marfin, no gap between window and website*/
+	background-color: #ffffff;
+	margin: 0;							/*body expanded upto corners with 0 margin, no gap between window and website*/
 }
 
+p {
+	color: #5d6660;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
 header {
 	height: 80px;
 	background-color: #ffffff;
@@ -39,7 +45,7 @@ header {
 }
 
 .getStartedBTN {
-	background-color: #6dc77a;
+	background-color: #228B22;
 	border-radius: 28px;
 /*	-moz-border-radius: 28px;*/			/*if feature is not supported by older browser versions (firefox)*/
 /*	-webkit-border-radius: 28px;		*//*for safari*/
@@ -47,7 +53,7 @@ header {
 	color: #ffffff;
 	padding: 10px 26px;					/*top right bottom left*/
 	margin-top: 20px;					/*from its parent element*/
-	display: inline-block;				/*with display: inline-block, the top and bottom margins/paddings are respected, but with 											display: inline they are not. Compared to display: block, the major difference is that 												display: inline-block does not add a line-break after the element, so the element can 												sit next to other elements.*/
+	display: inline-block;				/*with display: inline-block, the top and bottom margins/paddings are respected, but with 											display: inline they are not. Compared to display: block, the major difference is that 												display: inline-block does not add a line-break after the element, so the element can sit next to other elements.*/
 	font-size: 17px;
 	float: right;
 }
@@ -116,7 +122,81 @@ header {
 	font-size: 15px;
 	padding-left: 15px;
 	font-weight: 100;
-	background-color: #6dc77a;
+	background-color: #228B22;
 	color: #ffffff;
 	border: none;
+}
+
+#feature-section {							/*id so #*/
+	padding-top: 100px;
+}
+
+.feature-section-title {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	font-weight: 200;
+	line-height: 1.5em;
+}
+
+#feature-section-title-span {
+	background-color: #228B22;
+	color: #ffffff;
+	padding: 2px;
+}
+
+.feature-content {
+	margin: auto;
+/*
+	margin-left: 99px;
+	margin-right: 99px;
+*/
+	width: 80%;
+	text-align: center;
+	padding-top: 100px;
+	padding-left: 50px;							/*this helped to aligh images perfectly wrto left and right border*/
+	padding-left: 50px;
+}
+
+.feature-content .col-3 {
+	padding: 10px;
+	width: 30%;									/*overriding width propertie in class .col-3 from above to manifest 3 imgs along with padding at the bottom 											of the webpage*/
+}
+
+.feature-content .col-3 img {					/*every single image within coloumn 3 tag within feature content tag to have this prop*/
+	width: 100%;								/*this command helped to place 3 photos in line */
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.feature-content .col-3 p {
+	font-size: .9em;
+	letter-spacing: 1px;
+}
+										
+/*
+.feature-content .col-3 h3 {					//no need to do specifically as we did it in .feature-content class
+	text-align: center;
+}
+*/
+
+#showcase1-container {
+	padding-top: 60px;
+	background-color: #f6f8fa;
+	width: 100%;
+	clear: both;								/*The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede 												it. The clear property applies to floating and non-floating elements. specifies on which sides of an 												element floating elements are not allowed to float.*/
+}
+
+.showcase {
+	width: 80%;
+	margin: auto;
+}
+
+.col-2 {
+	float: left;
+	width: 48%;
+}
+.showcase1Pic {
+	width: 100%;
 }
