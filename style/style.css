@@ -191,12 +191,159 @@ header {
 .showcase {
 	width: 80%;
 	margin: auto;
+	overflow: auto;								/*check what it is*/
 }
 
 .col-2 {
 	float: left;
 	width: 48%;
 }
+
 .showcase1Pic {
 	width: 100%;
+}
+
+.feature-text {
+	padding-top: 300px;
+	padding-left: 50px;
+}
+
+.section-title {
+	width: 70%;
+	margin: auto;
+	line-height: 1.5em;
+	font-weight: 200;
+}
+
+.section-left {
+	width: 70%;
+	padding: 20px 10px 10px 10px;
+	margin: auto;
+/*	text-align: justify;*/
+}
+
+#showcase2-container {
+	padding-top: 60px;
+	background-color: #ffffff;
+	width: 100%;
+	clear: both;								/*The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede 												it. The clear property applies to floating and non-floating elements. specifies on which sides of an 												element floating elements are not allowed to float.*/
+}
+
+#call-to-action {
+	background-image: url(../images/darkdesk.png);
+	background-position: 50% 50%;				/*change the position to background img if it is too big*/
+	padding-bottom: 45px;
+}
+
+.col-1 {
+	width: 80%;
+	margin: auto;
+}
+
+.col-1 p {
+	font-size: 1.6em;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 100px;
+}
+
+.action-title {
+	color: #ffffff;
+	font-size: 4em;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 100px;
+	
+}
+
+.signupBTN {
+	background-color: #2bb512;				/*#228B22*/
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 200;
+	text-decoration: none;
+	padding: 30px 90px 30px 90px;
+}
+
+.signupBTN:hover {
+	background-color: #228B22;
+}
+
+.signupform {
+	background-color: #f6f8fa;
+	margin-right: 200px;
+	padding: 0px 50px 10px 50px;
+}
+
+.signupform h6 {
+	color: #000000;
+	padding-top: 15px;
+	font-size: .9em;
+	text-align: center;
+}
+	
+.top-margin {
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+
+input {
+	margin: 0;
+	width: 100%;
+	height: 50px;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	border: none;
+	margin-top: 15px;
+}
+
+button {
+	margin: 0;
+	width: 102%;
+	height: 50px;
+	border: none;
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	background-color: #2bb512;			/*#6dc77a*/
+	color: #ffffff;
+	margin-top: 15px;
+}
+
+footer {
+	background-color: #000000;
+	clear: both;							/*footer was overlapping with form section col-2*, that's why use clear command when facing same issue*/
+/*	margin-top: 30px;*/
+	height: 500px;
+	background-image: url(../images/footerbg.png);
+	background-position: 50% 50%;         /*flag important*/
+}
+
+.social-footer {
+	width: 33%;
+	float: left;
+	height: 40%;
+}
+
+.social-footer:hover {
+	background-color: #000000;
+	opacity: 50%;						/* after hovering opasity is diplayed to block*/
+}
+
+.center {
+	width: 50px;
+	margin: auto;
+	padding-top: 60px;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: .9em;
+	text-align: center;
+	display: block;						/*made copyright be aligned at center*/
 }
