@@ -36,7 +36,8 @@ header {
 	margin-top: 32px;
 }
 
-.menu li {								/*every list items within class menu*/
+.menu li {			
+	/*every list items within class menu*/
 	list-style-type: none;				
 	display: inline;					/*we need this to be aligned horizontally not vertically*/
 	font-size: 0.85em;
@@ -59,7 +60,7 @@ header {
 }
 
 #top-section-main {
-	background-image: url(../images/friends.jpg);	/*url() function*/
+	background: no-repeat left/cover url(../images/friends.jpg);	/*url() function*/
 	height: 740px;
 	border: none;
 }
@@ -230,7 +231,7 @@ header {
 }
 
 #call-to-action {
-	background-image: url(../images/darkdesk.png);
+	background: no-repeat left/cover url(../images/darkdesk.png);
 	background-position: 50% 50%;				/*change the position to background img if it is too big*/
 	padding-bottom: 45px;
 }
@@ -320,7 +321,7 @@ footer {
 	clear: both;							/*footer was overlapping with form section col-2*, that's why use clear command when facing same issue*/
 /*	margin-top: 30px;*/
 	height: 500px;
-	background-image: url(../images/footerbg.png);
+	background: no-repeat left/cover url(../images/footerbg.png);
 	background-position: 50% 50%;         /*flag important*/
 }
 
